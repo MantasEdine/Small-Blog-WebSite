@@ -35,9 +35,6 @@ router.post("/", (req, res) => {
       console.log(err.message);
     });
 });
-app.get("/add-blog", (req, res) => {
-  res.render("create", { title: "Create a new blog" });
-});
 
 router.get("/:id", (req, res) => {
   const id = req.params.id;

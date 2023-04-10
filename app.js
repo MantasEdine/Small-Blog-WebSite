@@ -5,8 +5,7 @@ const Blog = require("./models/Blog");
 const app = express();
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
-const dbURI =
-  "mongodb+srv://Youcef-Mantas:eeM1wiZSeck0phZc@cluster0.duxfya8.mongodb.net/test";
+const dbURI = "";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
